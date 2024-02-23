@@ -18,7 +18,7 @@ import itertools as it
 from collections import defaultdict
 
 # defining a subclass to ensure print statements match startercode
-class PrettyFrozenset(frozenset):
+class ltuple(tuple):
     def __repr__(self):
         return str(list(self)) 
 
@@ -28,8 +28,8 @@ class PrettyFrozenset(frozenset):
 # min_support: The minimum support threshold for an itemset to be considered frequent
 # Returns: A list of lists, where each list is a frequent itemset
 def apriori(dataset, min_support) -> list:
-    frequent_sets = {}
 
+    frequent_sets = {}
     
     # TODO: Implement the Apriori algorithm
     
@@ -38,7 +38,7 @@ def apriori(dataset, min_support) -> list:
     C1 = defaultdict(int)
     for basket in dataset:
         for item in basket:
-            C1[PrettyFrozenset((item,))] += 1
+            C1[ltuple((item,))] += 1
     
     
     # Pruning C1: removing infrequent singletons from dictionary
@@ -60,13 +60,13 @@ def apriori(dataset, min_support) -> list:
     # initializing C2 with candidates
     C2 = {}
     for pair in pairs:
-        C2[PrettyFrozenset(pair)] = 0
+        C2[ltuple(sorted(pair))] = 0
 
 
     # Pass 2: finding support of all candidate item pairs in C2
     for basket in dataset:
         for pair in it.combinations(basket,2):
-            pair = PrettyFrozenset(pair)
+            pair = ltuple(sorted(pair))
             if pair in C2:
                 C2[pair] += 1
 
@@ -75,7 +75,6 @@ def apriori(dataset, min_support) -> list:
     # this will generate L2
     pairs = tuple(C2)
     for pair in pairs:
-        pair = PrettyFrozenset(pair)
         if C2[pair] < min_support:
             del C2[pair]
     L2 = C2
@@ -84,19 +83,19 @@ def apriori(dataset, min_support) -> list:
     
     
     # generating candidate item triples for C3 using singletons in L2
-    frequent_singletons = set([i for s in L2 for i in s])
+    frequent_singletons = [i for s in L2 for i in s]
     triples = it.combinations(frequent_singletons, 3)
     # populating C3 with candidate triples
     C3 = {}
     for t in triples:
-        t = PrettyFrozenset(t)
+        t = ltuple(sorted(t))
         C3[t] = 0
     
     
     # Initial Prune of C3: will remove all triples containing infrequent pairs (pairs not in L2)
     for t in triples:
         for p in it.combinations(t, 2):
-            p = PrettyFrozenset(p)
+            p = ltuple(sorted(p))
             if p not in L2:
                 del C3[t]
                 break
@@ -105,7 +104,7 @@ def apriori(dataset, min_support) -> list:
     # Pass 3: counting support for all triples
     for basket in dataset:
         for t in it.combinations(basket, 3):
-            t = PrettyFrozenset(t)
+            t = ltuple(sorted(t))
             if t in C3:
                 C3[t] += 1
     
@@ -134,15 +133,15 @@ def generate_association_rules(dataset, frequent_sets, min_confidence) -> list:
 
     # TODO: Implement the association rule generation
     
-    for itmset in frequent_sets.keys():
+    for itmset in frequent_sets:
         
         for r in range(1, len(itmset)):
             
             for A in it.combinations(itmset,r):
 
-                antecedent = PrettyFrozenset(A)
-                consequent = itmset - antecedent
-                confidence = frequent_sets[itmset] / frequent_sets[antecedent]
+                antecedent = set(A)
+                consequent = set(itmset) - antecedent
+                confidence = frequent_sets[itmset] / frequent_sets[ltuple(sorted(antecedent))]
 
                 if (confidence >= min_confidence):
 

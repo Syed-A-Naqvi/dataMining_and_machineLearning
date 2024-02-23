@@ -14,7 +14,6 @@
 import urllib.request
 import itertools as it
 from collections import defaultdict
-import numpy as np
 
 # Load the retail dataset from the URL, this will be used in lab 4, not lab 3
 def load_data_from_url(url):
@@ -47,7 +46,7 @@ def pcy_algorithm(dataset, min_support, hash_buckets) -> list:
     # Pass 1: counting singletons and hashing pairs to buckets
     # each pair will be sorted in order to maintain consistent hashing for out of order pairs
     C1 = defaultdict(int)
-    buckets = np.zeros(hash_buckets)
+    buckets = defaultdict(int)
 
     for basket in dataset:
         
@@ -73,7 +72,7 @@ def pcy_algorithm(dataset, min_support, hash_buckets) -> list:
         frequent_items.append([i])
 
     # converting buckets to a bit vector
-    for x in range(len(buckets)):
+    for x in buckets:
         if buckets[x] < min_support:
             buckets[x] = 0
         else:
@@ -137,12 +136,6 @@ if __name__ == "__main__":
 # [4]
 # [5]
 # [1, 2]
-# [1, 3]
-# [2, 3]
 # [4, 5]
-# [1, 5]
-# [3, 5]
-# [2, 5]
 # [1, 4]
 # [2, 4]
-# [3, 4]
