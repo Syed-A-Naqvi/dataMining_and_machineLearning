@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1708726208 "/home/syarnaq/Documents/Arham/School/UOIT/3rd_Year/big_data_analytics/retail_dataset_association_rule_mining/lab4_latex/lab4.tex" "lab4.pdf" "lab4" 1708726208
+["pdflatex"] 1708823061 "/home/syarnaq/Documents/Arham/School/UOIT/3rd_Year/big_data_analytics/retail_dataset_association_rule_mining/lab4_latex/lab4.tex" "lab4.pdf" "lab4" 1708823062
   "/etc/texmf/web2c/texmf.cnf" 1695155906 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/syarnaq/Documents/Arham/School/UOIT/3rd_Year/big_data_analytics/retail_dataset_association_rule_mining/lab4_latex/lab4.tex" 1708726207 4905 abc6c889610c791e4122bc61d6c17f83 ""
+  "/home/syarnaq/Documents/Arham/School/UOIT/3rd_Year/big_data_analytics/retail_dataset_association_rule_mining/lab4_latex/lab4.tex" 1708823061 4558 401dc6317a6c15ba918e81d35bfe0eec ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -11,6 +11,7 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm" 1246382020 908 2921f8a10601f252058503cc6570e581 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm" 1246382020 940 75ac932a52f80982a9f8ea75d03a34cf ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm" 1246382020 940 228d6584342e91276bf566bcf9716b83 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmex10.tfm" 1136768653 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1136768653 1524 4414a8315f39513458b80dfc63bff03a ""
@@ -23,8 +24,10 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1136768653 1124 6c73e740cf17375f03eec0ee63599741 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1136768653 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1248133631 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1248133631 36281 c355509802a035cadc5f15869451dcee ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
@@ -64,10 +67,10 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1701325416 1435818 b5ba350b9e6517999870cfbcb9ef2973 ""
   "a.png" 1708717836 67587 e6f9ba3937ca58e779e19b241cf6ccc3 ""
   "b.png" 1708717880 78881 af827c0c2794c62f1928f4f1c1275016 ""
-  "c.png" 1708719057 159647 bcabd802bf06616735160aa80b382360 ""
-  "d.png" 1708719095 49150 447d51b968fab3a958283c3ea731e1e4 ""
-  "lab4.aux" 1708726208 32 ab05033ccbb38b00a31b200ccedf8001 "pdflatex"
-  "lab4.tex" 1708726207 4905 abc6c889610c791e4122bc61d6c17f83 ""
+  "c.png" 1708815797 176602 58a2d99c634aea109b76dd04613bda87 ""
+  "d.png" 1708823058 48896 acc48985009674fd9d102db1d787e1fe ""
+  "lab4.aux" 1708823062 32 ab05033ccbb38b00a31b200ccedf8001 "pdflatex"
+  "lab4.tex" 1708823061 4558 401dc6317a6c15ba918e81d35bfe0eec ""
   (generated)
   "lab4.aux"
   "lab4.log"

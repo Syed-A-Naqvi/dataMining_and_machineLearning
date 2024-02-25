@@ -52,7 +52,7 @@
             Graphing results. Dataset size is on the x-axis while runtime (ms) is on y-axis:
             \begin{figure}[H]
                 \centering
-                \includegraphics[width=1\textwidth, height=0.4\textheight]{./d.png}
+                \includegraphics[width=1\textwidth, height=0.35\textheight]{./d.png}
             \end{figure}
         \end{minipage}
 
@@ -61,19 +61,11 @@
         \end{minipage}
         
         \item \begin{minipage}[t]{0.9\textwidth}
-            The runtimes of both Apriori and PCY algorithms seem to increase roughly linearly with
-            the size of the dataset. Although the generation and support counting of $k$-tuples for
-            each $k$ iteration suggests an exponential increase, the pruning process likely offests
-            this cost by greatly reducing the number of candidates to consider. 
-            \\\\
-            The PCY algorithm is more computationaly expensive then the Apriori algorithm as evident
-            by the steeper line in the graph. This faster increase in runtime is due to the
-            additional hashing step that is not part of the Apriori algorithm.
+            The runtimes of both algorithms seem to increase roughly linearly with increasing dataset size.
+            The PCY algorithm is more computationaly expensive as evident by the steeper line. This faster
+            increase in runtime is due to the additional hashing step that is not part of the Apriori algorithm.
             Although more computationaly expensive, the PCY algorithm is less spatially expensive
             thanks to the stringent candidacy requirements it imposes on potential frequent item pairs.
-            Because of these requirements, a large number of pairs are pruned from consideration
-            freeing up more space in memory.
-
         \end{minipage}
 
     \end{enumerate}
@@ -110,8 +102,11 @@
                                  &= \frac{|\{3,6\}|}{|\{2,3,4,6,8\}|}\\
                                  &= \frac{2}{5} = 0.4\\
             \end{align*}
-            % C_{2} &= \{3,4,6,8\}\\
-            % C_{3} &= \{2,3,6\}
+        \end{minipage}
+        \item \begin{minipage}[t]{0.9\textwidth}
+            \textbf{Answer:} The expected value of the jaccard similarity would be $frac_{m}{n}$.\\
+
+            \textbf{Reasoning:} 
         \end{minipage}
 
     \end{enumerate}
