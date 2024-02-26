@@ -72,12 +72,11 @@ def pcy_algorithm(dataset, min_support, hash_buckets) -> list:
         frequent_items.append([i])
 
     # converting buckets to a bit vector
+    bitvector = 0
     for x in buckets:
-        if buckets[x] < min_support:
-            buckets[x] = 0
-        else:
-            buckets[x] = 1
-    
+        if buckets[x] >= min_support:
+            bitvector |= (1 << x)
+    del buckets
     
     
     # Pass 2: Generating C2 using L1 and bit vector to reduce candidate pair list
@@ -90,7 +89,7 @@ def pcy_algorithm(dataset, min_support, hash_buckets) -> list:
             p = tuple(sorted(p))
             bucket_num = hash_function(p, hash_buckets)
     
-            if( (p[0] in L1) and (p[1] in L1) and (buckets[bucket_num] == 1)):
+            if( (p[0] in L1) and (p[1] in L1) and (bitvector & (1 << bucket_num))):
                 C2[p] += 1
                 
                 
