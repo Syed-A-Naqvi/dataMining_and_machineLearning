@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.11.30)  24 FEB 2024 20:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.11.30)  27 FEB 2024 23:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -237,11 +237,11 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 18.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<./a.png, id=1, 1420.30624pt x 448.67625pt>
+<./a.png, id=1, 1814.78pt x 606.265pt>
 File: ./a.png Graphic file (type png)
 <use ./a.png>
 Package pdftex.def Info: ./a.png  used on input line 28.
-(pdftex.def)             Requested size: 422.77933pt x 144.5378pt.
+(pdftex.def)             Requested size: 422.76273pt x 144.53523pt.
 <./b.png, id=3, 1420.30624pt x 421.575pt>
 File: ./b.png Graphic file (type png)
 <use ./b.png>
@@ -250,35 +250,76 @@ Package pdftex.def Info: ./b.png  used on input line 36.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./a.png> <./b.png>]
-<./c.png, id=14, 1170.3725pt x 862.22125pt>
+<./c.png, id=14, 1115.16624pt x 842.14626pt>
 File: ./c.png Graphic file (type png)
 <use ./c.png>
 Package pdftex.def Info: ./c.png  used on input line 47.
-(pdftex.def)             Requested size: 422.7803pt x 289.07286pt.
+(pdftex.def)             Requested size: 422.76363pt x 289.07587pt.
 <./d.png, id=15, 620.7993pt x 393.8715pt>
 File: ./d.png Graphic file (type png)
 <use ./d.png>
 Package pdftex.def Info: ./d.png  used on input line 55.
 (pdftex.def)             Requested size: 422.78207pt x 252.95435pt.
  [2 <./c.png> <./d.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 107--108
+Underfull \hbox (badness 10000) in paragraph at lines 108--110
 
  []
 
-[3] (./lab4.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--120
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--120
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--132
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--138
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--138
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--141
+
+ []
+
+[3] [4]
+<./5bi.png, id=35, 1622.06pt x 779.91376pt>
+File: ./5bi.png Graphic file (type png)
+<use ./5bi.png>
+Package pdftex.def Info: ./5bi.png  used on input line 153.
+(pdftex.def)             Requested size: 422.76518pt x 252.94534pt.
+<./5bii.png, id=36, 1850.915pt x 275.0275pt>
+File: ./5bii.png Graphic file (type png)
+<use ./5bii.png>
+Package pdftex.def Info: ./5bii.png  used on input line 154.
+(pdftex.def)             Requested size: 422.76427pt x 72.27342pt.
+ [5 <./5bi.png> <./5bii.png>] (./lab4.aux) ) 
 Here is how much of TeX's memory you used:
- 3671 strings out of 480171
- 55845 string characters out of 5894488
- 356842 words of memory out of 5000000
- 21588 multiletter control sequences out of 15000+600000
- 478071 words of font info for 63 fonts, out of 8000000 for 9000
+ 3689 strings out of 480171
+ 56074 string characters out of 5894488
+ 361842 words of memory out of 5000000
+ 21602 multiletter control sequences out of 15000+600000
+ 478690 words of font info for 65 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  55i,11n,62p,368b,429s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on lab4.pdf (3 pages, 352108 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on lab4.pdf (5 pages, 532652 bytes).
 PDF statistics:
- 63 PDF objects out of 1000 (max. 8388607)
- 33 compressed objects within 1 object stream
+ 88 PDF objects out of 1000 (max. 8388607)
+ 46 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

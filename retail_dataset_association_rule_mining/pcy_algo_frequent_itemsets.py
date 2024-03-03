@@ -38,10 +38,8 @@ def hash_function(pair, num_buckets):
 def pcy_algorithm(dataset, min_support, hash_buckets) -> list:
     
     frequent_items = []
-
     
     # TODO: Implement the PCY algorithm
-    
     
     # Pass 1: counting singletons and hashing pairs to buckets
     # each pair will be sorted in order to maintain consistent hashing for out of order pairs
@@ -94,18 +92,9 @@ def pcy_algorithm(dataset, min_support, hash_buckets) -> list:
                 
                 
                 
-    # pruning infrequent item pairs
-    pairs = tuple(C2)
-    
-    for p in pairs:
-        if C2[p] < min_support:
-            del C2[p]
-    
-    L2 = C2
-    for p in L2:
+    # Appending all frequent candidate pairs
+    for p in C2:
         frequent_items.append(list(p))
-    
-
 
     return frequent_items
 
@@ -135,6 +124,12 @@ if __name__ == "__main__":
 # [4]
 # [5]
 # [1, 2]
+# [1, 3]
+# [2, 3]
 # [4, 5]
+# [1, 5]
+# [3, 5]
+# [2, 5]
 # [1, 4]
 # [2, 4]
+# [3, 4]

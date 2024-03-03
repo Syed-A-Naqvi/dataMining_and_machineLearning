@@ -17,11 +17,8 @@
 import itertools as it
 from collections import defaultdict
 
-# defining a subclass to ensure print statements match startercode
-class ltuple(tuple):
-    def __repr__(self):
-        return str(list(self)) 
-
+# global count storage dictionary
+set_counts = {}
 
 # Implement the Apriori algorithm for frequent itemset mining
 # dataset: A list of lists, where each list is a transaction
@@ -29,8 +26,6 @@ class ltuple(tuple):
 # Returns: A list of lists, where each list is a frequent itemset
 def apriori(dataset, min_support) -> list:
 
-    frequent_sets = {}
-    
     # TODO: Implement the Apriori algorithm
     
     # Pass 1: recording singleton support in dictionary
@@ -38,7 +33,7 @@ def apriori(dataset, min_support) -> list:
     C1 = defaultdict(int)
     for basket in dataset:
         for item in basket:
-            C1[ltuple((item,))] += 1
+            C1[tuple((item,))] += 1
     
     
     # Pruning C1: removing infrequent singletons from dictionary
@@ -51,7 +46,7 @@ def apriori(dataset, min_support) -> list:
     # defining frequent itemset map as L1
     L1 = C1
     # appending list of frequent singletons to frequent_sets
-    frequent_sets.update(L1)
+    set_counts.update(L1)
     
     
     # Generating candidate item pairs for C2 using singletons in L1
@@ -60,13 +55,13 @@ def apriori(dataset, min_support) -> list:
     # initializing C2 with candidates
     C2 = {}
     for pair in pairs:
-        C2[ltuple(sorted(pair))] = 0
+        C2[tuple(sorted(pair))] = 0
 
 
     # Pass 2: finding support of all candidate item pairs in C2
     for basket in dataset:
         for pair in it.combinations(basket,2):
-            pair = ltuple(sorted(pair))
+            pair = tuple(sorted(pair))
             if pair in C2:
                 C2[pair] += 1
 
@@ -79,7 +74,7 @@ def apriori(dataset, min_support) -> list:
             del C2[pair]
     L2 = C2
     # appending list of frequent pairs to frequent_sets
-    frequent_sets.update(L2)
+    set_counts.update(L2)
     
     
     # generating candidate item triples for C3 using singletons in L2
@@ -88,14 +83,14 @@ def apriori(dataset, min_support) -> list:
     # populating C3 with candidate triples
     C3 = {}
     for t in triples:
-        t = ltuple(sorted(t))
+        t = tuple(sorted(t))
         C3[t] = 0
     
     
     # Initial Prune of C3: will remove all triples containing infrequent pairs (pairs not in L2)
     for t in triples:
         for p in it.combinations(t, 2):
-            p = ltuple(sorted(p))
+            p = tuple(sorted(p))
             if p not in L2:
                 del C3[t]
                 break
@@ -104,7 +99,7 @@ def apriori(dataset, min_support) -> list:
     # Pass 3: counting support for all triples
     for basket in dataset:
         for t in it.combinations(basket, 3):
-            t = ltuple(sorted(t))
+            t = tuple(sorted(t))
             if t in C3:
                 C3[t] += 1
     
@@ -117,8 +112,11 @@ def apriori(dataset, min_support) -> list:
             del C3[t]
     L3 = C3
     # appending list of frequent triples to frequent_sets
-    frequent_sets.update(L3)
+    set_counts.update(L3)
     
+    frequent_sets = []
+    for s in set_counts:
+        frequent_sets.append(list(s))
     
     return frequent_sets
 
@@ -141,7 +139,7 @@ def generate_association_rules(dataset, frequent_sets, min_confidence) -> list:
 
                 antecedent = set(A)
                 consequent = set(itmset) - antecedent
-                confidence = frequent_sets[itmset] / frequent_sets[ltuple(sorted(antecedent))]
+                confidence = set_counts[tuple(itmset)] / set_counts[tuple(sorted(antecedent))]
 
                 if (confidence >= min_confidence):
 
