@@ -1,0 +1,55 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{cancel}
+\usepackage[shortlabels]{enumitem}
+\usepackage{caption}
+\usepackage{graphicx}
+\usepackage[top=0.5in, bottom=0.5in, left=1in, right=1in]{geometry}
+\usepackage{float}
+
+% \usepackage{titlesec}
+%     \titlespacing{\subsection}{\parindent}{15pt}{12pt}
+
+\title{\textbf{\underline{CSCI4030U: Big Data Analytics}\\Lab07}}
+\author{Syed Naqvi\\100590852}
+\date{\today}
+
+\begin{document}
+
+    \maketitle
+
+    \subsection*{1.}
+    
+    \begin{enumerate}[label = (\alph*), left=10pt, itemsep=10pt]
+        
+        \item \begin{minipage}[t]{0.9\textwidth}
+            \textbf{C4.5 (weka.classifier.trees.J48)}\\
+             Classification Accuracy: 85.9903\%\\
+             Sumamry and Confusion matrix:
+             \begin{figure}[H]
+                \includegraphics[width=0.75\textwidth, height=0.25\textheight]{./7a.png}
+            \end{figure}
+        \end{minipage}
+        \item \begin{minipage}[t]{0.9\textwidth}
+            \textbf{Naive Bayesian Classification (weka.classifiers.bayes.NaiveBayes)}\\
+             Classification Accuracy: 75.3623\%\\
+             Sumamry and Confusion matrix:
+             \begin{figure}[H]
+                \includegraphics[width=0.75\textwidth, height=0.25\textheight]{./7b.png}
+            \end{figure} 
+        \end{minipage}
+        \item \begin{minipage}[t]{0.9\textwidth}
+            \textbf{Neural Networks (weka.classifiers.functions.MultilayerPerceptron)}\\
+             Classification Accuracy: 77.2947\%\\
+             Sumamry and Confusion matrix:
+             \begin{figure}[H]
+                \includegraphics[width=0.75\textwidth, height=0.25\textheight]{./7c.png}
+            \end{figure}
+        \end{minipage}
+
+    \end{enumerate}
+
+\end{document}

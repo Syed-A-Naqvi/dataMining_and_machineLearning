@@ -27,9 +27,9 @@
         
         \item \begin{minipage}[t]{0.9\textwidth}
             \begin{figure}[H]
-                \includegraphics[width=0.5\textwidth, height=0.2\textheight]{./6ai1.png}\\
-                \includegraphics[width=0.6\textwidth, height=0.3\textheight]{./6aii1.png}\\
-                \includegraphics[width=0.6\textwidth, height=0.3\textheight]{./6aiii1.png}                
+                \includegraphics[width=0.4\textwidth, height=0.2\textheight]{./6ai1.png}\\
+                \includegraphics[width=0.5\textwidth, height=0.3\textheight]{./6aii1.png}\\
+                \includegraphics[width=0.8\textwidth, height=0.3\textheight]{./6aiii1.png}                
             \end{figure}
             The weka J48 algorithm is an open source version of the C4.5 algorithm which is essentially a statistical
             classification method. It creates a decision tree by using the principals of information entropy to recursively
@@ -41,9 +41,9 @@
 
         \item \begin{minipage}[t]{0.9\textwidth}
             \begin{figure}[H]
-                \includegraphics[width=0.5\textwidth, height=0.2\textheight]{./6bi1.png}\\
-                \includegraphics[width=0.6\textwidth, height=0.3\textheight]{./6bii1.png}\\
-                \includegraphics[width=0.6\textwidth, height=0.15\textheight]{./6biii1.png}                
+                \includegraphics[width=0.8\textwidth, height=0.25\textheight]{./6bii1.png}\\
+                \includegraphics[width=0.8\textwidth, height=0.3\textheight]{./6bi1.png}\\
+                \includegraphics[width=0.7\textwidth, height=0.15\textheight]{./6biii1.png}                
             \end{figure}
             The weka JRip algorithm is an implementation of the RIPPER (Repeated Incremental Pruning to Produce
             Error Reduction) algorithm. This is a rule based classification method that iteratively constructs a set
@@ -63,9 +63,9 @@
         \item \begin{minipage}[t]{0.9\textwidth}
             \textbf{C4.5 (weka.classifier.trees.J48)}\\
              Classification Accuracy: 97.2222\%\\
-             Confusion matrix:\\
+             Model Summary and Confusion matrix:
              \begin{figure}[H]
-                \includegraphics[width=0.3\textwidth, height=0.1\textheight]{./6a2.png}
+                \includegraphics[width=0.75\textwidth, height=0.25\textheight]{./6a2.png}
             \end{figure}
             Just as in the previous part of this lab, the J48 algorithm creates a decision tree partitioning
             on attributes with the highest information gain. Once a decision tree has been created, it is pruned
@@ -75,9 +75,9 @@
         \item \begin{minipage}[t]{0.9\textwidth}
             \textbf{RIPPER (weka.classifier.rules.JRip)}\\
              Classification Accuracy: 90.2778\%\\
-             Confusion matrix:\\
+             Model Summary and Confusion matrix:
              \begin{figure}[H]
-                \includegraphics[width=0.3\textwidth, height=0.1\textheight]{./6b2.png}
+                \includegraphics[width=0.75\textwidth, height=0.25\textheight]{./6b2.png}
             \end{figure}
             This algoritm first generates a set of if-then rules seeking to minimize classification error by adding as many
             conditions as possible. It then prunes the rules to reduce over-fitting and increase generalization. This process
@@ -87,9 +87,9 @@
         \item \begin{minipage}[t]{0.9\textwidth}
             \textbf{k-Nearest Neighbor (weka.classifiers.lazy.IBk)}\\
              Classification Accuracy: 87.5\%\\
-             Confusion matrix:\\
+             Model Summary and Confusion matrix:
              \begin{figure}[H]
-                \includegraphics[width=0.3\textwidth, height=0.1\textheight]{./6c2.png}
+                \includegraphics[width=0.75\textwidth, height=0.25\textheight]{./6c2.png}
             \end{figure} 
             This algorithm stores the training dataset in memory and calcualtes the distance
             (could be euclidean or manhattan or something else) between a new instance and its 'k'
@@ -98,9 +98,9 @@
         \item \begin{minipage}[t]{0.9\textwidth}
             \textbf{Naive Bayesian Classification (weka.classifiers.bayes.NaiveBayes)}\\
              Classification Accuracy: 97.2222\%\\
-             Confusion matrix:\\
+             Model Summary and Confusion matrix:
              \begin{figure}[H]
-                \includegraphics[width=0.3\textwidth, height=0.1\textheight]{./6d2.png}
+                \includegraphics[width=0.75\textwidth, height=0.25\textheight]{./6d2.png}
             \end{figure} 
             This algorithm makes strong independence assumptions between features and uses Bayes' theorem
             to determine the probability of a class given a set of input features. It then uses the features of an
@@ -109,9 +109,9 @@
         \item \begin{minipage}[t]{0.9\textwidth}
             \textbf{Neural Networks (weka.classifiers.functions.MultilayerPerceptron)}\\
              Classification Accuracy: 93.5185\%\\
-             Confusion matrix:\\
+             Model Summary and Confusion matrix:
              \begin{figure}[H]
-                \includegraphics[width=0.3\textwidth, height=0.1\textheight]{./6e2.png}
+                \includegraphics[width=0.75\textwidth, height=0.25\textheight]{./6e2.png}
             \end{figure}
             This algorithm is an implementation of a feedforward ariticial neural network where each neuron in one layer
             connects to every neuron in the next layer. Features in the training data are passed through the the layers

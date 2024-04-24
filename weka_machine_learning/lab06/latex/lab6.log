@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.30)  8 APR 2024 02:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.30)  8 APR 2024 09:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/syarnaq/Documents/Arham/School/UOIT/3rd_Year/big_data_analytics/lab6-10/lab06/latex/lab6.tex
-(/home/syarnaq/Documents/Arham/School/UOIT/3rd_Year/big_data_analytics/lab6-10/lab06/latex/lab6.tex
+**/home/syarnaq/Documents/Arham/School/UOIT/3rd_Year/big_data_analytics/weka_machine_learning/lab06/latex/lab6.tex
+(/home/syarnaq/Documents/Arham/School/UOIT/3rd_Year/big_data_analytics/weka_machine_learning/lab06/latex/lab6.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21> (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
@@ -260,102 +260,77 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: ./6ai1.png Graphic file (type png)
 <use ./6ai1.png>
 Package pdftex.def Info: ./6ai1.png  used on input line 30.
-(pdftex.def)             Requested size: 211.39104pt x 144.53464pt.
+(pdftex.def)             Requested size: 169.11282pt x 144.53464pt.
 <./6aii1.png, id=3, 479.7925pt x 690.58pt>
 File: ./6aii1.png Graphic file (type png)
 <use ./6aii1.png>
 Package pdftex.def Info: ./6aii1.png  used on input line 31.
-(pdftex.def)             Requested size: 253.67383pt x 216.80676pt.
+(pdftex.def)             Requested size: 211.38754pt x 216.80676pt.
 <./6aiii1.png, id=4, 769.87625pt x 485.815pt>
 File: ./6aiii1.png Graphic file (type png)
 <use ./6aiii1.png>
 Package pdftex.def Info: ./6aiii1.png  used on input line 32.
-(pdftex.def)             Requested size: 253.67229pt x 216.80597pt.
+(pdftex.def)             Requested size: 338.2297pt x 216.80597pt.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<./6bi1.png, id=13, 769.87625pt x 479.7925pt>
-File: ./6bi1.png Graphic file (type png)
-<use ./6bi1.png>
-Package pdftex.def Info: ./6bi1.png  used on input line 44.
-(pdftex.def)             Requested size: 211.38182pt x 144.53917pt.
-<./6bii1.png, id=14, 769.87625pt x 404.51125pt>
+<./6bii1.png, id=13, 769.87625pt x 404.51125pt>
 File: ./6bii1.png Graphic file (type png)
 <use ./6bii1.png>
-Package pdftex.def Info: ./6bii1.png  used on input line 45.
-(pdftex.def)             Requested size: 253.67229pt x 216.81566pt.
+Package pdftex.def Info: ./6bii1.png  used on input line 44.
+(pdftex.def)             Requested size: 338.2297pt x 180.67664pt.
+<./6bi1.png, id=14, 769.87625pt x 479.7925pt>
+File: ./6bi1.png Graphic file (type png)
+<use ./6bi1.png>
+Package pdftex.def Info: ./6bi1.png  used on input line 45.
+(pdftex.def)             Requested size: 338.2297pt x 216.81242pt.
 <./6biii1.png, id=15, 769.87625pt x 252.945pt>
 File: ./6biii1.png Graphic file (type png)
 <use ./6biii1.png>
 Package pdftex.def Info: ./6biii1.png  used on input line 46.
-(pdftex.def)             Requested size: 253.67229pt x 108.40141pt.
+(pdftex.def)             Requested size: 295.951pt x 108.40141pt.
  [2 <./6ai1.png> <./6aii1.png> <./6aiii1.png>]
-<./6a2.png, id=22, 216.81pt x 88.33pt>
+<./6a2.png, id=22, 735.74875pt x 358.33875pt>
 File: ./6a2.png Graphic file (type png)
 <use ./6a2.png>
 Package pdftex.def Info: ./6a2.png  used on input line 68.
-(pdftex.def)             Requested size: 126.83499pt x 72.2747pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 64--69
-
- []
-
-[3 <./6bi1.png> <./6bii1.png> <./6biii1.png>]
-<./6b2.png, id=29, 220.825pt x 97.36375pt>
+(pdftex.def)             Requested size: 317.08429pt x 180.67804pt.
+ [3 <./6bii1.png> <./6bi1.png> <./6biii1.png>]
+<./6b2.png, id=29, 715.67375pt x 358.33875pt>
 File: ./6b2.png Graphic file (type png)
 <use ./6b2.png>
 Package pdftex.def Info: ./6b2.png  used on input line 80.
-(pdftex.def)             Requested size: 126.83522pt x 72.27682pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 76--81
-
- []
-
-<./6c2.png, id=30, 220.825pt x 101.37875pt>
+(pdftex.def)             Requested size: 317.08148pt x 180.67804pt.
+<./6c2.png, id=30, 719.68875pt x 362.35374pt>
 File: ./6c2.png Graphic file (type png)
 <use ./6c2.png>
 Package pdftex.def Info: ./6c2.png  used on input line 92.
-(pdftex.def)             Requested size: 126.83522pt x 72.27641pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 88--93
-
- []
-
-<./6d2.png, id=31, 220.825pt x 87.32625pt>
+(pdftex.def)             Requested size: 317.09232pt x 180.6788pt.
+ [4 <./6a2.png> <./6b2.png>]
+<./6d2.png, id=37, 719.68875pt x 356.33125pt>
 File: ./6d2.png Graphic file (type png)
 <use ./6d2.png>
 Package pdftex.def Info: ./6d2.png  used on input line 103.
-(pdftex.def)             Requested size: 126.83522pt x 72.27823pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 99--104
-
- []
-
-[4 <./6a2.png> <./6b2.png> <./6c2.png>]
-<./6e2.png, id=39, 220.825pt x 87.32625pt>
+(pdftex.def)             Requested size: 317.09232pt x 180.6717pt.
+<./6e2.png, id=38, 719.68875pt x 356.33125pt>
 File: ./6e2.png Graphic file (type png)
 <use ./6e2.png>
 Package pdftex.def Info: ./6e2.png  used on input line 114.
-(pdftex.def)             Requested size: 126.83522pt x 72.27823pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 110--115
-
- []
-
-[5 <./6d2.png> <./6e2.png>] (./lab6.aux) ) 
+(pdftex.def)             Requested size: 317.09232pt x 180.6717pt.
+ [5 <./6c2.png> <./6d2.png>] [6 <./6e2.png>] (./lab6.aux) ) 
 Here is how much of TeX's memory you used:
  4966 strings out of 480171
- 81112 string characters out of 5894489
- 364399 words of memory out of 5000000
+ 81154 string characters out of 5894489
+ 363399 words of memory out of 5000000
  22872 multiletter control sequences out of 15000+600000
  476780 words of font info for 57 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 55i,9n,63p,338b,447s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,9n,63p,352b,447s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on lab6.pdf (5 pages, 233128 bytes).
+Output written on lab6.pdf (6 pages, 319233 bytes).
 PDF statistics:
- 63 PDF objects out of 1000 (max. 8388607)
- 25 compressed objects within 1 object stream
+ 66 PDF objects out of 1000 (max. 8388607)
+ 27 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
